@@ -1,0 +1,6 @@
+pygame==2.1.2
+numpy==1.24.3
+pillow==10.0.0
+pytmx==3.31
+pyyaml==6.0.1
+pathlib==1.0.1 

@@ -1,0 +1,6 @@
+@echo off
+echo Uyum Vadisi varlıkları oluşturuluyor...
+python src/main.py
+echo.
+echo Tamamlandı! Devam etmek için herhangi bir tuşa basın...
+pause > nul 

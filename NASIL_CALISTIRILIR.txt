@@ -1,0 +1,97 @@
+ERDEM DÜNYASI - KURULUM VE ÇALIŞTIRMA TALİMATLARI
+==============================================
+
+Bu belge, Erdem Dünyası oyununu nasıl kuracağınızı ve çalıştıracağınızı açıklar.
+
+GEREKSİNİMLER
+------------
+- Python 3.7 veya üzeri
+- Pygame ve diğer gerekli kütüphaneler (otomatik kurulacaktır)
+
+KURULUM
+-------
+
+1. PYTHON KURULUMU:
+   - Windows: https://www.python.org/downloads/ adresinden Python'u indirin
+     * Kurulum sırasında "Add Python to PATH" seçeneğini işaretlemeyi unutmayın!
+   - Linux: Terminal üzerinden şu komutu çalıştırın:
+     * Ubuntu/Debian: sudo apt-get install python3 python3-pip
+     * Fedora: sudo dnf install python3 python3-pip
+   - macOS: 
+     * Homebrew ile: brew install python
+     * Veya https://www.python.org/downloads/ adresinden indirin
+
+2. OTOMATİK BAŞLATICI KULLANARAK OYUNU BAŞLATMA:
+   - Windows: run_game.bat dosyasına çift tıklayın
+   - Linux/macOS: Terminal üzerinden şu komutları çalıştırın:
+     * chmod +x run_game.sh  (sadece ilk seferde gereklidir)
+     * ./run_game.sh
+
+3. MANUEL OLARAK OYUNU BAŞLATMA:
+   Gerekli kütüphaneleri kurmak için:
+   - pip install -r src/requirements.txt
+
+   Oyunu başlatmak için:
+   - python main.py
+   
+KONTROLLER
+----------
+- W, A, S, D: Hareket etme
+- E: Etkileşim (NPC'lerle konuşma, nesneleri kullanma)
+- I: Envanter
+- Q: Görev günlüğü
+- 1-4: Ruh hayvanı yetenekleri
+- Space: Saldırı / Ruh hayvanı dönüşümü
+- ESC: Duraklatma menüsü
+- R: Normal saldırı
+- Z: En yakın düşmanı hedefleme
+- B: Banka sistemini açma (banka noktalarında)
+
+FARE KONTROLLERİ
+----------------
+- Sol Tık: NPC veya düşman seçme
+- Sağ Tık: Hedefe hareket etme
+- Sürükle-Bırak: Yetenek çubuğunda yetenekleri düzenleme
+
+SORUN GİDERME
+-------------
+1. "Python bulunamadı" hatası:
+   - Python'un doğru bir şekilde kurulu olduğundan emin olun
+   - Windows'ta PATH ayarlarını kontrol edin
+
+2. Kütüphane eksikliği hataları:
+   - Manuel olarak pip install -r src/requirements.txt komutunu çalıştırın
+
+3. Ekran hatası veya başlatma sorunları:
+   - Pygame'in doğru sürümünün yüklü olup olmadığını kontrol edin
+   - Ekran çözünürlüğünüzün yeterli olduğundan emin olun (800x600 veya daha yüksek)
+
+YENİ ÖZELLİKLER
+--------------
+1. BANKA SİSTEMİ:
+   - Hesabınıza bağlı bir banka sistemine erişebilirsiniz
+   - Tüm karakterleriniz arasında eşya ve altın paylaşımı yapabilirsiniz
+   - Banka noktalarında 'B' tuşuna basarak erişilebilir
+
+2. YETENEK ÇUBUĞU:
+   - Aktif yeteneklerinizi yetenek çubuğuna sürükleyip bırakarak ekleyebilirsiniz
+   - 1-9 tuşlarıyla hızlıca yeteneklerinizi kullanabilirsiniz
+   - Yetenekleri sürükleyerek yerlerini değiştirebilirsiniz
+
+3. GELİŞMİŞ HEDEFLEME:
+   - Z tuşuyla en yakın düşmanı otomatik hedefleyebilirsiniz
+   - Sol tık ile düşmanları seçebilirsiniz
+   - Sağ tık ile haritada istediğiniz yere hareket edebilirsiniz
+
+GELİŞTİRME DURUMU
+----------------
+Bu sürüm aktif geliştirme aşamasındadır. Şu anda:
+
+1. Ana oyun motoru ve grafikler uygulanıyor
+2. Ruh hayvanı sistemi ve yetenekler entegre ediliyor
+3. Banka sistemi ve yetenek çubuğu ekleniyor
+4. Fare ve klavye kontrolleri iyileştiriliyor
+
+Oyunun tam sürümü için takipte kalın. Şu anda gösterim sürümü çalışmaktadır.
+
+Keyifli oyunlar dileriz! 
